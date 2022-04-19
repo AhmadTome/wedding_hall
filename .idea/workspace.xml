@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4c677433-eb28-4961-b434-778d8d8089f5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/UserPanel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adornment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/band.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cake.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dj.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hairdresser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nav-bar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photographer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wedding_hall.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminPanel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ListOfExams.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_appointment.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_appointment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointmentList.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/sendCode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/earns.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/banner-admin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/exam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/home.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/k3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/skoda.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/van.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/COMMITMENT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/SECURITY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/VERSION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/get_oauth_token.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-af.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-az.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ba.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-be.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-bg.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ca.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-cs.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-da.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-de.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-el.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-eo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-es.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-et.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fi.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-gl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-he.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-hi.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-hr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-hu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-hy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-id.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-it.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ja.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ka.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ko.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-lt.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-lv.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-mg.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ms.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-nb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-nl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-pl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-pt.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-pt_br.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ru.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sk.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sr_latn.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sv.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-tl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-tr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-uk.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-vi.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-zh.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-zh_cn.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/phpunit.xml.dist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/Exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/OAuth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/PHPMailer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/POP3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/SMTP.php" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
+  <component name="ProjectId" id="1dUTz3MfdDJrI2NA1kBwNplKwhW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ASAL Product/asal-product-backend" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\driving school\css" />
+      <recent name="C:\xampp\htdocs\CompanyProject\js" />
+      <recent name="C:\xampp\htdocs\CompanyProject\images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c677433-eb28-4961-b434-778d8d8089f5" name="Default Changelist" comment="" />
+      <created>1592478930332</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592478930332</updated>
+      <workItem from="1592478931467" duration="1029000" />
+      <workItem from="1592480010321" duration="1528000" />
+      <workItem from="1592956337789" duration="14000" />
+      <workItem from="1593264300106" duration="2775000" />
+      <workItem from="1593338447647" duration="1771000" />
+      <workItem from="1593349069237" duration="2773000" />
+      <workItem from="1593422257093" duration="4304000" />
+      <workItem from="1593618940370" duration="5709000" />
+      <workItem from="1593937407791" duration="1615000" />
+      <workItem from="1593971991602" duration="1611000" />
+      <workItem from="1594079244846" duration="790000" />
+      <workItem from="1594080457714" duration="100000" />
+      <workItem from="1594113247698" duration="176000" />
+      <workItem from="1594113658084" duration="63000" />
+      <workItem from="1594128239234" duration="9185000" />
+      <workItem from="1594161016165" duration="2539000" />
+      <workItem from="1594200228328" duration="1291000" />
+      <workItem from="1594201603160" duration="639000" />
+      <workItem from="1594220892863" duration="2820000" />
+      <workItem from="1594336909007" duration="20652000" />
+      <workItem from="1594485731848" duration="1548000" />
+      <workItem from="1594492203258" duration="12000" />
+      <workItem from="1594502743921" duration="856000" />
+      <workItem from="1594684710038" duration="4956000" />
+      <workItem from="1594773494831" duration="27425000" />
+      <workItem from="1594926728846" duration="3706000" />
+      <workItem from="1595087150024" duration="4814000" />
+      <workItem from="1595115745242" duration="1949000" />
+      <workItem from="1595149988367" duration="21000" />
+      <workItem from="1595722971174" duration="1230000" />
+      <workItem from="1613327635347" duration="614000" />
+      <workItem from="1615986766619" duration="165000" />
+      <workItem from="1636015131390" duration="100000" />
+      <workItem from="1638871682333" duration="1841000" />
+      <workItem from="1638883000589" duration="2285000" />
+      <workItem from="1638887133891" duration="12622000" />
+      <workItem from="1639309092461" duration="14556000" />
+      <workItem from="1639388844250" duration="5948000" />
+      <workItem from="1640695466076" duration="1909000" />
+      <workItem from="1640786156761" duration="2665000" />
+      <workItem from="1640868290242" duration="538000" />
+      <workItem from="1640988806155" duration="42000" />
+      <workItem from="1641026753947" duration="12000" />
+      <workItem from="1645966232883" duration="587000" />
+      <workItem from="1650196737545" duration="618000" />
+      <workItem from="1650197747291" duration="8940000" />
+      <workItem from="1650276251553" duration="12357000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
