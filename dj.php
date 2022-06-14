@@ -6,6 +6,11 @@ include ('nav-bar.php');
         <div class="main-section">
             <div class="row">
 
+                <?php
+                if (isset($_SESSION['Name'])) {
+                    echo '<input type="hidden" id="username" value="'. $_SESSION['Name'] .'">';
+                }
+                ?>
 
 
                 <div class="container" style="color: white; text-align: right; padding-top: 35px;" dir="rtl">
@@ -29,7 +34,6 @@ include ('nav-bar.php');
                         ?>
                     </p>
 
-                    <form action="database/add_appointment.php" method="post">
 
                         <div class="row form-group">
                             <label for="driver_name">اسم الفرقة</label>
@@ -40,7 +44,7 @@ include ('nav-bar.php');
                             echo '<select class="form-control" id="dj_select">';
                             echo '<option>-- اختر اسم الديجي --</option>';
                             foreach ($dj as $item) {
-                                echo "<option data-rate='". $item['rate'] ."' value='" . $item['id'] . "'>" . $item['name'] . "</option>";
+                                echo "<option data-price='". $item['price'] ."' data-rate='". $item['rate'] ."' value='" . $item['id'] . "'>" . $item['name'] . "</option>";
                             }
                             echo '</select>';
 
@@ -62,6 +66,11 @@ include ('nav-bar.php');
                                 <input type="text" class="form-control" name="rate" id="rate" readonly >
                             </div>
                         </div>
+
+                    <div class=" form-group">
+                        <label>السعر</label>
+                        <input type="text" class="form-control" id="price" name="price" readonly>
+                    </div>
 
 
                         <div class="row form-group">
@@ -93,11 +102,15 @@ include ('nav-bar.php');
 
                         <div class="form-group">
                             <label for="cost">ملاحظات</label>
-                            <textarea class="form-control" rows="3"></textarea>
+                            <textarea class="form-control" rows="3" id="note"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">تسجيل الحجز</button>
-                    </form>
+                        <?php
+                        if (isset($_SESSION['email'])) {
+                            echo '<button type="submit" class="btn btn-primary" id="reserve">تسجيل الحجز</button>';
+                        }
+                        ?>
+
                 </div>
             </div>
         </div>
@@ -113,8 +126,38 @@ include ('nav-bar.php');
         $(document).ready(function () {
             $('#dj_select').on('change', function () {
                 var rate = $("#dj_select  option:selected").attr('data-rate');
+                var price = $("#dj_select  option:selected").attr('data-price');
                 $('#rate').val(rate);
-            })
+                $('#price').val(price);
+            });
+
+            $('#reserve').on('click', function () {
+
+                var content = {
+                    'اسم ألزبون' : $("#username").val(),
+                    'اسم الفرقة' : $("#dj_select option:selected").text(),
+                    'أفراد الفرقة' : $("#dj_type_select option:selected").text(),
+                    'التقييم' : $("#rate").val(),
+                    'وقت بداية الحجز' : $('#start_at').val(),
+                    'وقت نهاية الحجز' : $('#end_at').val(),
+                    'ملاحظات' : $('#note').val(),
+                };
+
+                $.ajax({
+                    url: 'database/createReservation.php',
+                    type: "post",
+                    data: {
+                        "type": "dj",
+                        "type_id": $('#dj_select').val(),
+                        "price": $('#price').val(),
+                        "content": JSON.stringify(content),
+                    },
+                    success: function (data) {
+                        alert(data)
+                    }
+                });
+            });
+
         })
     </script>
 
@@ -137,6 +180,7 @@ function getdj()
                     "id" => $row["id"],
                     "name" => $row["name"],
                     "rate" => $row["rate"],
+                    "price" => $row["price"],
                 ]
             );
         }

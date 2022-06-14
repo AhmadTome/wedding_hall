@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['email'])) {
-    header('Location:login.php');
-}
+//if (!isset($_SESSION['email'])) {
+//    header('Location:login.php');
+//}
 
 ?>
 <!DOCTYPE html>
@@ -20,39 +20,47 @@ if (!isset($_SESSION['email'])) {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <style>
-    .main-section{
+    .main-section {
         position: relative;
-        background:linear-gradient(#919ca6, #98a1a9, rgba(0, 0, 0, .7)), url(imgs/banner-admin.jpg);
-        height:auto;
+        background: linear-gradient(#919ca6, #98a1a9, rgba(0, 0, 0, .7)), url(imgs/banner-admin.jpg);
+        height: auto;
         min-height: 600px;
         width: 100%;
         background-size: cover;
         padding: 0px 30px 15px 30px;
     }
-    .main-section i{
-        font-size:35px;
-        color:#fff;
-        position:absolute;
-        left:50%;
-        bottom:15px;
+
+    .main-section i {
+        font-size: 35px;
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        bottom: 15px;
         transform: translateX(-50%);
     }
-    .main-section .section-part{
-        color:#fff;
+
+    .main-section .section-part {
+        color: #fff;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
     }
+
     @-webkit-keyframes blinker {
-        from {opacity: 1.0;}
-        to {opacity: 0.0;}
+        from {
+            opacity: 1.0;
+        }
+        to {
+            opacity: 0.0;
+        }
     }
-    .blink{
+
+    .blink {
         text-decoration: blink;
         -webkit-animation-name: blinker;
         -webkit-animation-duration: 0.6s;
-        -webkit-animation-iteration-count:infinite;
-        -webkit-animation-timing-function:ease-in-out;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
         -webkit-animation-direction: alternate;
     }
 
@@ -79,8 +87,8 @@ if (!isset($_SESSION['email'])) {
 <!--</div>-->
 
 
-
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark" dir="rtl">
+
 
     <a class="navbar-brand" href="UserPanel.php">الصفحة الرئيسية</a>
 
@@ -99,7 +107,7 @@ if (!isset($_SESSION['email'])) {
             <a class="nav-link" href="photographer.php">المصور</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="add_appointment.php">الفستان</a>
+            <a class="nav-link" href="dress.php">الفستان</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="band.php">الفرقة</a>
@@ -111,19 +119,39 @@ if (!isset($_SESSION['email'])) {
             <a class="nav-link" href="hairdresser.php">الكوافيرة</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="add_appointment.php">الاكسسوارات</a>
+            <a class="nav-link" href="accessories.php">الاكسسوارات</a>
         </li>
 
+        <?php
+
+        if (isset($_SESSION['type']) && $_SESSION['type'] == 'user') {
+            echo '<li class="nav-item">
+            <a class="nav-link" href="my-reservations.php">حجوزاتي</a>
+        </li>';
+        } else if (isset($_SESSION['type']) && $_SESSION['type'] == 'admin') {
+            echo '<li class="nav-item">
+            <a class="nav-link" href="reservations.php">جميع الحجوزات</a>
+        </li>';
+        }
+        ?>
 
 
-        <li class="nav-item" style="float: left">
+
+        <?php
+        if (isset($_SESSION['email'])) {
+            echo '<li class="nav-item" style="float: left">
             <a class="nav-link" href="helper/kill_session.php">تسجيل خروج</a>
-        </li>
+        </li>';
+        } else {
+            echo '<li class="nav-item" style="float: left">
+            <a class="nav-link" href="login.php">تسجيل دخول</a>
+        </li>';
+        }
+        ?>
 
 
     </ul>
 </nav>
-
 
 
 <!--<script>-->

@@ -6,7 +6,11 @@ include ('nav-bar.php');
     <div class="main-section">
         <div class="row">
 
-
+            <?php
+            if (isset($_SESSION['Name'])) {
+                echo '<input type="hidden" id="username" value="'. $_SESSION['Name'] .'">';
+            }
+            ?>
 
             <div class="container" style="color: white; text-align: right; padding-top: 35px;" dir="rtl">
                 <p class="text-right" style="color: greenyellow">
@@ -29,8 +33,6 @@ include ('nav-bar.php');
                     ?>
                 </p>
 
-                <form action="database/add_appointment.php" method="post">
-
                     <div class="row form-group">
                         <div class="form-group col-6">
                             <label for="driver_name">اسم المصور</label>
@@ -41,7 +43,7 @@ include ('nav-bar.php');
                             echo '<select class="form-control" id="photographer_select">';
                             echo '<option>-- اختر اسم المصور --</option>';
                             foreach ($photographer as $item) {
-                                echo "<option data-phone='". $item['phone'] ."' value='" . $item['id'] . "'>" . $item['name'] . "</option>";
+                                echo "<option data-phone='". $item['phone'] ."' data-price='". $item['price'] ."' value='" . $item['id'] . "'>" . $item['name'] . "</option>";
                             }
                             echo '</select>';
 
@@ -52,6 +54,11 @@ include ('nav-bar.php');
                             <label for="phone">رقم الهاتف</label>
                             <input type="text" class="form-control" id="phone"  name="phone" readonly>
                         </div>
+                    </div>
+
+                    <div class=" form-group">
+                        <label>السعر</label>
+                        <input type="text" class="form-control" id="price" name="price" readonly>
                     </div>
 
                     <div class="row form-group">
@@ -85,11 +92,15 @@ include ('nav-bar.php');
 
                     <div class="form-group">
                         <label for="cost">ملاحظات</label>
-                        <textarea class="form-control" rows="3"></textarea>
+                        <textarea class="form-control" rows="3" id="note"></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">تسجيل الحجز</button>
-                </form>
+                    <?php
+                    if (isset($_SESSION['email'])) {
+                        echo '<button type="submit" class="btn btn-primary" id="reserve">تسجيل الحجز</button>';
+                    }
+                    ?>
+
             </div>
         </div>
     </div>
@@ -105,8 +116,38 @@ include ('nav-bar.php');
     $(document).ready(function () {
         $('#photographer_select').on('change', function () {
             var phone = $("#photographer_select  option:selected").attr('data-phone');
+            var price = $("#photographer_select  option:selected").attr('data-price');
             $('#phone').val(phone);
-        })
+            $('#price').val(price);
+        });
+
+
+        $('#reserve').on('click', function () {
+
+            var content = {
+                'اسم ألزبون' : $("#username").val(),
+                'اسم المصور' : $("#photographer_select option:selected" ).text(),
+                'رقم الهاتف' : $("#phone").val(),
+                'وقت بداية الحجز' : $('#start_at').val(),
+                'وقت نهاية الحجز' : $('#end_at').val(),
+                'ملاحظات' : $('#note').val(),
+            };
+
+            $.ajax({
+                url: 'database/createReservation.php',
+                type: "post",
+                data: {
+                    "type": "photographer",
+                    "type_id": $('#photographer_select').val(),
+                    "price": $('#price').val(),
+                    "content": JSON.stringify(content),
+                },
+                success: function (data) {
+                    alert(data)
+                }
+            });
+        });
+
     })
 </script>
 
@@ -128,7 +169,8 @@ function getPhotographer()
                 [
                     "id" => $row["id"],
                     "name" => $row["name"],
-                    "phone" => $row["phone"]
+                    "phone" => $row["phone"],
+                    "price" => $row["price"]
                 ]
             );
         }

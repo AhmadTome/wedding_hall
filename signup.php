@@ -19,6 +19,8 @@ include ('header.php');
         <form action="database/signup.php" method="post">
             <input type="text" id="Name" class="fadeIn second" name="Name" placeholder="Name">
             <input type="text" id="Age" class="fadeIn second" name="Age" placeholder="Age">
+            <input type="text" id="phone" class="fadeIn second" name="phone" placeholder="phone">
+            <input type="text" id="address" class="fadeIn second" name="address" placeholder="address">
             <input type="text" id="email" class="fadeIn second" name="email" placeholder="email">
             <input type="password" id="password" class="fadeIn third" name="password" placeholder="*********">
             <input type="submit" class="btn btn-primary fadeIn fourth" value="Sign Up">
@@ -43,4 +45,3 @@ include ('header.php');
 
 
 </body>
-

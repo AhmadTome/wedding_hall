@@ -22,9 +22,10 @@ if ($result->num_rows > 0) {
         $_SESSION['Age'] = $row['age'];
         $_SESSION['email'] = $email;
         $_SESSION['password'] = $password;
+        $_SESSION['type'] = $row['type'];
 
         if ($row['type'] == "admin") {
-            header('Location: ../home.php');
+            header('Location: ../admin/AdminPanel.php');
         } else {
             header('Location: ../UserPanel.php');
         }
